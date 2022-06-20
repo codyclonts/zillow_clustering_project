@@ -1,33 +1,28 @@
-# zillow_clustering_project
-# Zillow Project
+
+# Zillow Clustering Project
 
 
 ## Project Planning
-- Use information from the zillow data base to acquire, prepare, explore, and make models to predict the value of single family residential properties. 
+- Use information from the zillow data base to acquire, prepare, explore, and make models to predict the logerror of single family residential properties. 
 
 
 ## Project Goals
-- Create a jupyter notebook that does the following:
-  - Acquires and prepares the data
-  - Explores the data
-  - Creates and refines a model
-  - Offers conclusions and a way forward
-- Create python modules that can assist in the process of making the jupyter notebook and make it repeatable
-   - wrangle.py
-   - explore.py 
-   - scaling.py
-- Ask questions during the exploration phase to better understand what could be factoring into the target variable of tax value dollar count
+### Answer the question : Whate are some of the reasons for log error and how can we reduce it?
+- Ask questions during the exploration phase to better understand what could be factoring into the target variable of logerror
   - answer those questions with statistical tests and visualizations
-- Construct machine learning models for predicting the tax value dollar count of the properties
+- These answers will be used to hopefully reduce log error in the future
+- Construct machine learning models for predicting the logerror of the properties
   - run most effective machine learning model against test
 - ensure everything is documented and annotated
 - Give 5 mminute presentation to Zillow Data Science Team
 
 
 ## Business Goals
-- Find key drivers for property value for single family residential properties
+- Find key drivers for logerror for single family residential properties
 - Deliver a report to the Zillow Data Science Team with adequate documentation and comments
-- Construct a machine learning model that can be used to predict the property values for single family residential properties
+- Construct a machine learning model that can be used to predict the logerror for single family residential properties
+- Try to beat the current machine learning model to reduce log error in the future
+- This will give more accurate property values to consumers when they are attempting to buy a home
 
 ## Audience
 - Zillow Data Science Team
@@ -59,14 +54,26 @@
   - evaluate on test
 - Deliver final presentation to Zillow Data Science Team
 
+## Initial Hypotheses:
+- Logerror has a relationship with the location of the property
+- Logerror is strongly related to the time of year that the property was sold.
+- Log error is related to the value of the property.
+- Log error and the age of the property are related.
 
 ## Executive Summary
-- The factors that most drive tax value dollar count (from most to least important) are total square feet, bedroom count, age, and location
-- Currently, our best shot at predicting the tax value dollar count of a property is my polynomial regression model.
+- A few key factors have a relationship with log error, such as:
+  - The location of the property
+  - When the property was purchased
+  - The age of the property
+- The value of a property doesn't seem to be a key factor of log error
+- It seems that the more properties that are sold during a time frame the lower the log error.
+
 
 ## Reproduce the project
 - In order to reproduce the project, you will need
   - env.py file that will enable you access to the CodeUp database
   - credentials for codeup database
   - All other files contained in this repository
+  - clone this repository to your local  machine
+  - Understanding of what log error is (can be found in data dictionary)
   
