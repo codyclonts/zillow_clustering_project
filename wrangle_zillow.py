@@ -97,7 +97,7 @@ def data_scaled(train, validate, test, columns_to_scale):
     return train_scaled, validate_scaled, test_scaled
 
 def make_int(df):
-    df = df.astype({'bedroomcnt':'int', 'calculatedfinishedsquarefeet' : 'int' , 'bathroomcnt' : 'int', 'propertylandusetypeid' : 'int' , 'fips' : 'int' , 'latitude' : 'int' , 'longitude' : 'int' , 'lotsizesquarefeet' : 'int' , 'regionidcity' : 'int' , 'regionidzip' : 'int', 'yearbuilt' : 'int' , 'taxvaluedollarcnt' : 'int' , 'taxamount' : 'int' , 'censustractandblock' : 'int' , 'id.1' : 'int' , 'age' : 'int', 'month' : 'int'})
+    df = df.astype({'bedroomcnt':'int', 'calculatedfinishedsquarefeet' : 'int' , 'bathroomcnt' : 'int', 'propertylandusetypeid' : 'int' , 'fips' : 'int' , 'latitude' : 'int' , 'longitude' : 'int' , 'lotsizesquarefeet' : 'int' , 'regionidcity' : 'int' , 'regionidzip' : 'int', 'yearbuilt' : 'int' , 'taxvaluedollarcnt' : 'int' , 'taxamount' : 'int' , 'censustractandblock' : 'int' , 'id.1' : 'int' , 'age' : 'int', 'month' : 'int', 'propertylandusetypeid' : 'int'})
     return df
 
 def county(fips):
