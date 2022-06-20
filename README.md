@@ -7,7 +7,7 @@
 
 
 ## Project Goals
-### Answer the question : Whate are some of the reasons for log error and how can we reduce it?
+### Answer the question : What are some of the reasons for log error and how can we reduce it?
 - Ask questions during the exploration phase to better understand what could be factoring into the target variable of logerror
   - answer those questions with statistical tests and visualizations
 - These answers will be used to hopefully reduce log error in the future
